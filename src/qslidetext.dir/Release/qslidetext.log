@@ -1,7 +1,0 @@
-﻿  Building Custom Rule D:/QT project/qslidetext2/src/CMakeLists.txt
-  CMake does not need to re-run because D:/QT project/qslidetext2/src/CMakeFiles/generate.stamp is up-to-date.
-  mocs_compilation.cpp
-  qslidetext.cc
-  正在生成代码...
-    正在创建库 D:/QT project/qslidetext2/src/Release/qslidetext.lib 和对象 D:/QT project/qslidetext2/src/Release/qslidetext.exp
-  qslidetext.vcxproj -> D:\QT project\qslidetext2\src\Release\qslidetext.dll
