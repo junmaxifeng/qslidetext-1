@@ -21,6 +21,7 @@
 
 #include "qslidetext.h"
 #include "qslidetext_p.h"
+#include "../kglobalfun.h"
 
 ////////////////////////////////////////////////////////////////////////////////
 // Typedefs & Constants
@@ -180,12 +181,15 @@ void QSlideTextPrivate::update(bool repaint)
             m_txtLayer = m_txtLayer.scaled(m_drawRect.size());
         }
         m_txtLayer.fill(QColor(0, 0, 0, 0));
-        QPainter painter(&m_txtLayer);
+        QPixmap pix=m_txtLayer;
 
+        QPainter painter(&pix);
         // draw text
         painter.setFont(font);
         painter.setPen(m_textColor);
-        painter.drawText(m_txtLayer.rect(), 0, m_text);
+        painter.drawText(pix.rect(), 0, m_text);
+
+        m_txtLayer=KGlobalFun::rasterizedPixmap(pix,5,5);
     }
 
     // setup timer

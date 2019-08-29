@@ -25,12 +25,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+    kglobalfun.cpp \
     main.cc \
     mainwindow.cc \
     src/plugins/qslidetextplugin.cc \
     src/qslidetext.cc
 
 HEADERS += \
+        kglobalfun.h \
         mainwindow.h \
         src/plugins/qwidgetplugin.h \
         src/qslidetext.h \
