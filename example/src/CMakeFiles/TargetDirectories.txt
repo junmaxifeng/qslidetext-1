@@ -1,0 +1,8 @@
+D:/QT project/qslidetext2/src/CMakeFiles/qslidetext_static.dir
+D:/QT project/qslidetext2/src/CMakeFiles/qslidetext.dir
+D:/QT project/qslidetext2/src/CMakeFiles/INSTALL.dir
+D:/QT project/qslidetext2/src/CMakeFiles/ALL_BUILD.dir
+D:/QT project/qslidetext2/src/CMakeFiles/ZERO_CHECK.dir
+D:/QT project/qslidetext2/src/plugins/CMakeFiles/qslidetext_plugin.dir
+D:/QT project/qslidetext2/src/plugins/CMakeFiles/INSTALL.dir
+D:/QT project/qslidetext2/src/plugins/CMakeFiles/ALL_BUILD.dir

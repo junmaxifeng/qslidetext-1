@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{666BF7AD-00EC-38FE-967B-91E1A93CAB52}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>qslidetext_plugin</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QT project\qslidetext2\src\plugins\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">qslidetext_plugin.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">qslidetext_plugin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QT project\qslidetext2\src\plugins\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">qslidetext_plugin.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">qslidetext_plugin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\QT project\qslidetext2\src\plugins\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">qslidetext_plugin.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">qslidetext_plugin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\QT project\qslidetext2\src\plugins\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">qslidetext_plugin.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">qslidetext_plugin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\QT project\qslidetext2\src\plugins\qslidetext_plugin_autogen\include_Debug;D:\QT project\qslidetext2\src;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtCore;D:\Qt\Qt5.13.0\5.13.0\msvc2017\.\mkspecs\win32-msvc;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtGui;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtANGLE;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtDesigner;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtUiPlugin;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;XT_BUILD_STATIC;QT_CORE_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_DESIGNER_LIB;QT_UIPLUGIN_LIB;QT_XML_LIB;CMAKE_INTDIR="Debug";qslidetext_plugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;XT_BUILD_STATIC;QT_CORE_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_DESIGNER_LIB;QT_UIPLUGIN_LIB;QT_XML_LIB;CMAKE_INTDIR=\"Debug\";qslidetext_plugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\QT project\qslidetext2\src\plugins\qslidetext_plugin_autogen\include_Debug;D:\QT project\qslidetext2\src;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtCore;D:\Qt\Qt5.13.0\5.13.0\msvc2017\.\mkspecs\win32-msvc;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtGui;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtANGLE;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtDesigner;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtUiPlugin;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\QT project\qslidetext2\src\plugins\qslidetext_plugin_autogen\include_Debug;D:\QT project\qslidetext2\src;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtCore;D:\Qt\Qt5.13.0\5.13.0\msvc2017\.\mkspecs\win32-msvc;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtGui;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtANGLE;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtDesigner;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtUiPlugin;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC and UIC for target qslidetext_plugin</Message>
+      <Command>setlocal
+cd "D:\QT project\qslidetext2\src\plugins"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "D:/QT project/qslidetext2/src/plugins/CMakeFiles/qslidetext_plugin_autogen.dir/AutogenInfo.cmake" Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Designerd.lib;..\Debug\qslidetext_static.lib;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Xmld.lib;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Widgetsd.lib;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Guid.lib;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Cored.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/QT project/qslidetext2/src/plugins/Debug/qslidetext_plugin.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/QT project/qslidetext2/src/plugins/Debug/qslidetext_plugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\QT project\qslidetext2\src\plugins\qslidetext_plugin_autogen\include_Release;D:\QT project\qslidetext2\src;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtCore;D:\Qt\Qt5.13.0\5.13.0\msvc2017\.\mkspecs\win32-msvc;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtGui;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtANGLE;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtDesigner;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtUiPlugin;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XT_BUILD_STATIC;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_DESIGNER_LIB;QT_UIPLUGIN_LIB;QT_XML_LIB;CMAKE_INTDIR="Release";qslidetext_plugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XT_BUILD_STATIC;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_DESIGNER_LIB;QT_UIPLUGIN_LIB;QT_XML_LIB;CMAKE_INTDIR=\"Release\";qslidetext_plugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\QT project\qslidetext2\src\plugins\qslidetext_plugin_autogen\include_Release;D:\QT project\qslidetext2\src;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtCore;D:\Qt\Qt5.13.0\5.13.0\msvc2017\.\mkspecs\win32-msvc;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtGui;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtANGLE;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtDesigner;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtUiPlugin;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\QT project\qslidetext2\src\plugins\qslidetext_plugin_autogen\include_Release;D:\QT project\qslidetext2\src;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtCore;D:\Qt\Qt5.13.0\5.13.0\msvc2017\.\mkspecs\win32-msvc;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtGui;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtANGLE;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtDesigner;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtUiPlugin;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC and UIC for target qslidetext_plugin</Message>
+      <Command>setlocal
+cd "D:\QT project\qslidetext2\src\plugins"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "D:/QT project/qslidetext2/src/plugins/CMakeFiles/qslidetext_plugin_autogen.dir/AutogenInfo.cmake" Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Designer.lib;..\Release\qslidetext_static.lib;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Xml.lib;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Widgets.lib;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Gui.lib;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/QT project/qslidetext2/src/plugins/Release/qslidetext_plugin.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/QT project/qslidetext2/src/plugins/Release/qslidetext_plugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\QT project\qslidetext2\src\plugins\qslidetext_plugin_autogen\include_MinSizeRel;D:\QT project\qslidetext2\src;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtCore;D:\Qt\Qt5.13.0\5.13.0\msvc2017\.\mkspecs\win32-msvc;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtGui;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtANGLE;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtDesigner;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtUiPlugin;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XT_BUILD_STATIC;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_DESIGNER_LIB;QT_UIPLUGIN_LIB;QT_XML_LIB;CMAKE_INTDIR="MinSizeRel";qslidetext_plugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XT_BUILD_STATIC;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_DESIGNER_LIB;QT_UIPLUGIN_LIB;QT_XML_LIB;CMAKE_INTDIR=\"MinSizeRel\";qslidetext_plugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\QT project\qslidetext2\src\plugins\qslidetext_plugin_autogen\include_MinSizeRel;D:\QT project\qslidetext2\src;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtCore;D:\Qt\Qt5.13.0\5.13.0\msvc2017\.\mkspecs\win32-msvc;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtGui;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtANGLE;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtDesigner;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtUiPlugin;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\QT project\qslidetext2\src\plugins\qslidetext_plugin_autogen\include_MinSizeRel;D:\QT project\qslidetext2\src;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtCore;D:\Qt\Qt5.13.0\5.13.0\msvc2017\.\mkspecs\win32-msvc;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtGui;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtANGLE;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtDesigner;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtUiPlugin;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC and UIC for target qslidetext_plugin</Message>
+      <Command>setlocal
+cd "D:\QT project\qslidetext2\src\plugins"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "D:/QT project/qslidetext2/src/plugins/CMakeFiles/qslidetext_plugin_autogen.dir/AutogenInfo.cmake" MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Designer.lib;..\MinSizeRel\qslidetext_static.lib;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Xml.lib;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Widgets.lib;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Gui.lib;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/QT project/qslidetext2/src/plugins/MinSizeRel/qslidetext_plugin.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/QT project/qslidetext2/src/plugins/MinSizeRel/qslidetext_plugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\QT project\qslidetext2\src\plugins\qslidetext_plugin_autogen\include_RelWithDebInfo;D:\QT project\qslidetext2\src;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtCore;D:\Qt\Qt5.13.0\5.13.0\msvc2017\.\mkspecs\win32-msvc;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtGui;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtANGLE;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtDesigner;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtUiPlugin;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XT_BUILD_STATIC;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_DESIGNER_LIB;QT_UIPLUGIN_LIB;QT_XML_LIB;CMAKE_INTDIR="RelWithDebInfo";qslidetext_plugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XT_BUILD_STATIC;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_DESIGNER_LIB;QT_UIPLUGIN_LIB;QT_XML_LIB;CMAKE_INTDIR=\"RelWithDebInfo\";qslidetext_plugin_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\QT project\qslidetext2\src\plugins\qslidetext_plugin_autogen\include_RelWithDebInfo;D:\QT project\qslidetext2\src;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtCore;D:\Qt\Qt5.13.0\5.13.0\msvc2017\.\mkspecs\win32-msvc;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtGui;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtANGLE;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtDesigner;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtUiPlugin;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\QT project\qslidetext2\src\plugins\qslidetext_plugin_autogen\include_RelWithDebInfo;D:\QT project\qslidetext2\src;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtCore;D:\Qt\Qt5.13.0\5.13.0\msvc2017\.\mkspecs\win32-msvc;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtGui;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtANGLE;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtDesigner;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtUiPlugin;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC and UIC for target qslidetext_plugin</Message>
+      <Command>setlocal
+cd "D:\QT project\qslidetext2\src\plugins"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "D:/QT project/qslidetext2/src/plugins/CMakeFiles/qslidetext_plugin_autogen.dir/AutogenInfo.cmake" RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Designer.lib;..\RelWithDebInfo\qslidetext_static.lib;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Xml.lib;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Widgets.lib;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Gui.lib;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/QT project/qslidetext2/src/plugins/RelWithDebInfo/qslidetext_plugin.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/QT project/qslidetext2/src/plugins/RelWithDebInfo/qslidetext_plugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\QT project\qslidetext2\src\plugins\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/QT project/qslidetext2/src/plugins/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" "-SD:/QT project/qslidetext2/src" "-BD:/QT project/qslidetext2/src" --check-stamp-file "D:/QT project/qslidetext2/src/plugins/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/QT project/qslidetext2/src/plugins/CMakeLists.txt;D:\QT project\qslidetext2\src\plugins\CMakeLists.txt;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5\Qt5Config.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Designer\Qt5DesignerConfig.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Designer\Qt5DesignerConfigVersion.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Designer\Qt5Designer_QAxWidgetPlugin.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Designer\Qt5Designer_QQuickWidgetPlugin.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Designer\Qt5Designer_QWebEngineViewPlugin.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5UiPlugin\Qt5UiPluginConfig.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5UiPlugin\Qt5UiPluginConfigVersion.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;D:\QT project\qslidetext2\src\plugins\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QT project\qslidetext2\src\plugins\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/QT project/qslidetext2/src/plugins/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" "-SD:/QT project/qslidetext2/src" "-BD:/QT project/qslidetext2/src" --check-stamp-file "D:/QT project/qslidetext2/src/plugins/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/QT project/qslidetext2/src/plugins/CMakeLists.txt;D:\QT project\qslidetext2\src\plugins\CMakeLists.txt;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5\Qt5Config.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Designer\Qt5DesignerConfig.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Designer\Qt5DesignerConfigVersion.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Designer\Qt5Designer_QAxWidgetPlugin.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Designer\Qt5Designer_QQuickWidgetPlugin.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Designer\Qt5Designer_QWebEngineViewPlugin.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5UiPlugin\Qt5UiPluginConfig.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5UiPlugin\Qt5UiPluginConfigVersion.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;D:\QT project\qslidetext2\src\plugins\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QT project\qslidetext2\src\plugins\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/QT project/qslidetext2/src/plugins/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" "-SD:/QT project/qslidetext2/src" "-BD:/QT project/qslidetext2/src" --check-stamp-file "D:/QT project/qslidetext2/src/plugins/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/QT project/qslidetext2/src/plugins/CMakeLists.txt;D:\QT project\qslidetext2\src\plugins\CMakeLists.txt;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5\Qt5Config.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Designer\Qt5DesignerConfig.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Designer\Qt5DesignerConfigVersion.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Designer\Qt5Designer_QAxWidgetPlugin.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Designer\Qt5Designer_QQuickWidgetPlugin.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Designer\Qt5Designer_QWebEngineViewPlugin.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5UiPlugin\Qt5UiPluginConfig.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5UiPlugin\Qt5UiPluginConfigVersion.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;D:\QT project\qslidetext2\src\plugins\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\QT project\qslidetext2\src\plugins\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/QT project/qslidetext2/src/plugins/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" "-SD:/QT project/qslidetext2/src" "-BD:/QT project/qslidetext2/src" --check-stamp-file "D:/QT project/qslidetext2/src/plugins/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/QT project/qslidetext2/src/plugins/CMakeLists.txt;D:\QT project\qslidetext2\src\plugins\CMakeLists.txt;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5\Qt5Config.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Designer\Qt5DesignerConfig.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Designer\Qt5DesignerConfigVersion.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Designer\Qt5Designer_QAxWidgetPlugin.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Designer\Qt5Designer_QQuickWidgetPlugin.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Designer\Qt5Designer_QWebEngineViewPlugin.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5UiPlugin\Qt5UiPluginConfig.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5UiPlugin\Qt5UiPluginConfigVersion.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;D:\QT project\qslidetext2\src\plugins\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\QT project\qslidetext2\src\plugins\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\QT project\qslidetext2\src\plugins\qslidetext_plugin_autogen\mocs_compilation.cpp" />
+    <ClCompile Include="D:\QT project\qslidetext2\src\plugins\qslidetextplugin.cc" />
+    <ClInclude Include="D:\QT project\qslidetext2\src\plugins\qwidgetplugin.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\QT project\qslidetext2\src\ZERO_CHECK.vcxproj">
+      <Project>{F34440DF-C6A2-3123-BD00-FCF639D63E92}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\QT project\qslidetext2\src\qslidetext_static.vcxproj">
+      <Project>{FD6D5C46-830D-32A9-A677-65E222E98583}</Project>
+      <Name>qslidetext_static</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

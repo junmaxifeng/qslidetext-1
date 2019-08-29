@@ -16,7 +16,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-#include "../src/qslidetext.h"
+#include "src/qslidetext.h"
 
 ////////////////////////////////////////////////////////////////////////////////
 // Typedefs & Constants
@@ -31,14 +31,24 @@
 //
 MainWindow::MainWindow(QWidget* parent)
   : QWidget(parent)
-  , m_ui(new Ui::QSlideTextMainWindow())
+  , ui(new Ui::MainWindow())
 {
   init();
 }
 
 void MainWindow::init()
 {
-  m_ui->setupUi(this);
+  ui->setupUi(this);
+
+  ui->_qslidetext_2->setMode(QSlideText::SlideMode::Slide);
+  ui->_qslidetext_3->setMode(QSlideText::SlideMode::Intermittent);
+  ui->_qslidetext_6->setMode(QSlideText::SlideMode::Slide);
+  ui->_qslidetext_6->setSpeed(QSlideText::SlideSpeed::Fast);
+
+  ui->_qslidetext_4->setAlign(QSlideText::AlignRight);
+  ui->_qslidetext_5->setAlign(QSlideText::AlignLeft);
+  ui->_qslidetext_5->setMode(QSlideText::SlideMode::Intermittent);
+
 }
 
 ////////////////////////////////////////////////////////////////////////////////

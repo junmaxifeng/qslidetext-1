@@ -26,7 +26,7 @@
 // Classes
 //
 namespace Ui {
-class QSlideTextMainWindow;
+class MainWindow;
 }  // namespace Ui
 
 class MainWindow : public QWidget
@@ -40,7 +40,7 @@ class MainWindow : public QWidget
   void init();
 
  private:
-  Ui::QSlideTextMainWindow* m_ui;
+  Ui::MainWindow* ui;
 };
 
 ////////////////////////////////////////////////////////////////////////////////

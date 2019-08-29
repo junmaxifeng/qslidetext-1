@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>QSlideTextMainWindow</class>
- <widget class="QWidget" name="QSlideTextMainWindow">
+ <class>MainWindow</class>
+ <widget class="QWidget" name="MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -15,34 +15,25 @@
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
-    <widget class="QSlideText" name="_qslidetext">
-     <property name="text">
+    <widget class="QSlideText" name="_qslidetext" native="true">
+     <property name="text" stdset="0">
       <string>Still Mode</string>
      </property>
     </widget>
    </item>
    <item>
-    <widget class="QSlideText" name="_qslidetext_2">
-     <property name="text">
+    <widget class="QSlideText" name="_qslidetext_2" native="true">
+     <property name="text" stdset="0">
       <string>Slide Mode Normal</string>
-     </property>
-     <property name="mode">
-      <enum>QSlideText::Slide</enum>
      </property>
     </widget>
    </item>
    <item>
-    <widget class="QSlideText" name="_qslidetext_3">
-     <property name="text">
+    <widget class="QSlideText" name="_qslidetext_3" native="true">
+     <property name="text" stdset="0">
       <string>Intermittent Mode Slow</string>
      </property>
-     <property name="mode">
-      <enum>QSlideText::Intermittent</enum>
-     </property>
-     <property name="speed">
-      <enum>QSlideText::Slow</enum>
-     </property>
-     <property name="textColor">
+     <property name="textColor" stdset="0">
       <color>
        <red>255</red>
        <green>0</green>
@@ -52,41 +43,23 @@
     </widget>
    </item>
    <item>
-    <widget class="QSlideText" name="_qslidetext_4">
-     <property name="text">
+    <widget class="QSlideText" name="_qslidetext_4" native="true">
+     <property name="text" stdset="0">
       <string>Still Algin Right</string>
      </property>
-     <property name="align">
-      <enum>QSlideText::AlignRight</enum>
-     </property>
     </widget>
    </item>
    <item>
-    <widget class="QSlideText" name="_qslidetext_5">
-     <property name="text">
+    <widget class="QSlideText" name="_qslidetext_5" native="true">
+     <property name="text" stdset="0">
       <string>Intermittent Mode Algin Left</string>
      </property>
-     <property name="mode">
-      <enum>QSlideText::Intermittent</enum>
-     </property>
-     <property name="speed">
-      <enum>QSlideText::Slow</enum>
-     </property>
-     <property name="align">
-      <enum>QSlideText::AlignLeft</enum>
-     </property>
     </widget>
    </item>
    <item>
-    <widget class="QSlideText" name="_qslidetext_6">
-     <property name="text">
+    <widget class="QSlideText" name="_qslidetext_6" native="true">
+     <property name="text" stdset="0">
       <string>Very Long Text Message in Slide Mode and Very Fast.</string>
-     </property>
-     <property name="mode">
-      <enum>QSlideText::Slide</enum>
-     </property>
-     <property name="speed">
-      <enum>QSlideText::VeryFast</enum>
      </property>
     </widget>
    </item>
